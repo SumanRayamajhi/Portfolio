@@ -1,0 +1,20 @@
+a.bottom__to__top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s all ease;
+  align-items: center;
+  justify-content: center;
+}
+a.bottom__to__top.active {
+  display: flex;
+}
+.middle__arrow {
+  color: #fff;
+}

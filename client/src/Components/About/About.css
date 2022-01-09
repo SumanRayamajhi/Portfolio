@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300;400;500;700;900&display=swap");
+.about {
+  background: #191919;
+}
+img.about__img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+h1.about__heading {
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: start;
+  font-family: Roboto, sans-serif;
+  font-size: 60px;
+}
+button.about.btn.pointer {
+  text-transform: capitalize;
+  width: 195px;
+  height: 55px;
+  font-size: 18px;
+  transition: 0.4s ease;
+}
+.about__button {
+  padding: 20px 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  p.p__color {
+    font-size: 15px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  button.about.btn.pointer {
+    text-transform: capitalize;
+    width: 165px;
+    height: 50px;
+    font-size: 13px;
+    transition: 0.4s ease;
+  }
+}

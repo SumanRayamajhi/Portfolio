@@ -1,0 +1,151 @@
+.project {
+  background: #191919;
+}
+h1.heading {
+  font-size: 50px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+p.heading.p__color {
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 1.2;
+}
+img.project__img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+  opacity: 0.7;
+  position: relative;
+}
+img.project__img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1;
+  opacity: 1;
+}
+.mask__effect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f9004d;
+  border-radius: 10px;
+  transition: 0.4s;
+  opacity: 0.3;
+  display: none;
+}
+.project__box:hover .mask__effect {
+  display: inline;
+  transform: scale(1.1);
+}
+
+.project__box:hover img.project__img {
+  transform: scale(1.1);
+}
+.project__meta.absolute {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+h5.project__text {
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+h4.project__text {
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+a.project__btn {
+  padding: 12px 35px;
+  border: 2px solid #ffffff87;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  margin-top: 12rem !important;
+}
+
+a.project__btn:hover {
+  border: 2px solid rgb(83, 232, 139);
+  background: rgb(83, 232, 139);
+  background: -webkit-linear-gradient(
+    130deg,
+    rgba(83, 232, 139, 1) 0%,
+    rgba(21, 190, 119, 1) 100%
+  );
+}
+
+button.btn {
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid rgb(83, 232, 139);
+  background: rgb(83, 232, 139);
+  background: -webkit-linear-gradient(
+    130deg,
+    rgba(83, 232, 139, 1) 0%,
+    rgba(21, 190, 119, 1) 100%
+  );
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.4s all ease;
+}
+button.view__more:hover {
+  background-color: #fff;
+  border: 2px solid #f9004d;
+  color: #f9004d !important;
+}
+
+.Project__Cards {
+  border-radius: 10px !important;
+  background-color: #302f2f;
+  text-align: center;
+  width: 100%;
+  height: 32rem;
+  color: #fff;
+}
+.Project__Image {
+  width: 100%;
+  height: 18rem;
+  border-radius: 10px;
+}
+.discription {
+  margin-bottom: 2rem;
+  word-spacing: 1px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  padding: 1rem;
+}
+
+.Portfolio__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  h4.project__text {
+    font-size: 20px;
+    text-align: center;
+  }
+}
