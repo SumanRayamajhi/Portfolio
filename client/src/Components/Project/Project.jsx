@@ -103,7 +103,10 @@ function Project() {
                   </Card.Text>
                   {/* <Button variant="primary">Go somewhere</Button> */}
 
-                  <a href="#" className="project__btn">
+                  <a
+                    href="https://github.com/SumanRayamajhi/node-challenge-chat-server"
+                    className="project__btn"
+                  >
                     Code
                   </a>
                   <a
