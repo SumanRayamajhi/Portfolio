@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactMe.css";
 import BackToTopButton from "../UpToTopButton/UpToTopButton";
+import SendEmail from "./SendEmail";
 
 function ContactMe() {
   window.addEventListener("scroll", function () {
@@ -22,7 +23,7 @@ function ContactMe() {
                 <strong> sams.rayamajhi@gmail.com</strong>
               </p>
             </div>
-            <div className="input__box">
+            {/* <form className="input__box">
               <input
                 type="text"
                 className="contact name"
@@ -48,7 +49,8 @@ function ContactMe() {
                 {" "}
                 Submit
               </button>
-            </div>
+            </form> */}
+            <SendEmail />
           </div>
         </div>
       </div>
