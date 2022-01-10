@@ -144,7 +144,7 @@ function Project() {
                 <Card.Img
                   variant="top"
                   className="Project__Image"
-                  src="./img/beer-6.jpg"
+                  src="Img/beer-6.jpg"
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
