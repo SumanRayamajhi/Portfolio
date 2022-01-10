@@ -91,7 +91,7 @@ function Project() {
                 <Card.Img
                   className="Project__Image"
                   variant="top"
-                  src="./img/chat-message-3.jpg"
+                  src="./img/chat-message-7.jpg"
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
@@ -156,7 +156,10 @@ function Project() {
                     process.
                   </Card.Text>
 
-                  <a href="#" className="project__btn">
+                  <a
+                    href="https://github.com/SumanRayamajhi/Punk-Beer-Api"
+                    className="project__btn"
+                  >
                     Code
                   </a>
                   <a
