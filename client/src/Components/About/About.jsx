@@ -19,14 +19,27 @@ function About() {
                 motivational aspiration in new dynamic and progressive
                 companies.
               </p>
-              <div className="about__button d__flex align__items__center">
-                <a
-                  href="Suman's-Resume.pdf"
-                  download={"Suman Suman's-Resume.pdf"}
-                >
-                  {" "}
-                  <button className="about btn pointer">Download CV</button>
-                </a>
+              <div className="About__skills">
+                <h2 className="About__skills__title">Skills</h2>
+                <ul className="About__skills__list">
+                  <li>HTML and CSS</li>
+                  <li>Javascript</li>
+                  <li>React</li>
+                  <li>Node</li>
+                  <li>SQL</li>
+                  <li>Bootstrap</li>
+                  <li>Figma</li>
+                </ul>
+
+                <div className="about__button d__flex align__items__center">
+                  <a
+                    href="Suman's-Resume.pdf"
+                    download={"Suman Suman's-Resume.pdf"}
+                  >
+                    {" "}
+                    <button className="about btn pointer">Download CV</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -24,6 +24,19 @@ button.about.btn.pointer {
 .about__button {
   padding: 20px 0px;
 }
+.About__skills {
+  margin-top: 10px;
+}
+.About__skills__title {
+  font-size: 30px;
+}
+.About__skills__list {
+  color: rgba(198, 201, 216, 0.75);
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 15px;
+}
 
 @media only screen and (max-width: 1024px) {
   p.p__color {
