@@ -15,64 +15,60 @@ body {
   background-color: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
 }
 .SocialMedia__Wrapper {
-  display: inline-flex;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
   margin-top: 2rem;
 }
 .SocialMedia__Wrapper .SocialMedia__Button {
-  display: block;
+  display: inline-block;
   overflow: hidden;
   height: 60px;
   width: 60px;
-  float: right;
-  margin: 5px 0;
-  background: #fff;
+  margin: 0 25px;
+  background: rgba(198, 201, 216, 0.3);
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-out;
+  box-shadow: -5px -5px 20px 0 rgba(0, 0, 0, 0.9),
+    5px 5px 20px 0 rgba(0, 0, 0, 0.9), 5px 5px 20px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease-out;
+  border: 0.1px solid rgba(198, 201, 216, 0.75);
 }
 
 .SocialMedia__Wrapper .SocialMedia__Button:hover {
   width: 300px;
+  transition: all 0.4s ease-out;
 }
-.SocialMedia__Wrapper .SocialMedia__Button:nth-child(1):hover {
-  width: 230px;
-}
-.SocialMedia__Wrapper .SocialMedia__Button:nth-child(2):hover {
-  width: 320px;
-}
+
 .SocialMedia__Wrapper .SocialMedia__Button:hover span {
   margin-top: -40px;
   margin-left: 65px;
 }
 
 .SocialMedia__Wrapper .SocialMedia__Button .icon {
-  display: block;
+  display: inline-block;
   height: 60px;
   width: 60px;
+  background-color: #333;
   border-radius: 50px;
   text-align: center;
   box-sizing: border-box;
   line-height: 60px;
   transition: all 0.3s ease-out;
+  box-shadow: -7px -7px 20px 0;
 }
-.SocialMedia__Wrapper .SocialMedia__Button:nth-child(1):hover .icon {
-  background: #4267b2;
-}
-.SocialMedia__Wrapper .SocialMedia__Button:nth-child(2):hover .icon {
-  background: #4267b2;
-}
-.SocialMedia__Wrapper .SocialMedia__Button:nth-child(3):hover .icon {
-  background: #333;
-}
-.SocialMedia__Wrapper .SocialMedia__Button:nth-child(4):hover .icon {
-  background: rgb(10, 102, 194);
+.SocialMedia__Wrapper .SocialMedia__Button:hover .icon {
+  background: rgb(83, 232, 139);
+  background: -webkit-linear-gradient(
+    130deg,
+    rgba(83, 232, 139, 1) 0%,
+    rgba(21, 190, 119, 1) 100%
+  );
 }
 
 .SocialMedia__Wrapper .SocialMedia__Button .icon i {
   font-size: 25px;
   line-height: 60px;
+  color: rgba(198, 201, 216, 0.75);
   transition: all 0.3s ease-out;
 }
 .SocialMedia__Wrapper .SocialMedia__Button:hover .icon i {
@@ -80,12 +76,23 @@ body {
 }
 
 .SocialMedia__Wrapper .SocialMedia__Button span {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 20px;
   margin-left: 10px;
-  color: #4267b2 !important;
+  background: rgb(83, 232, 139);
+  background: -webkit-linear-gradient(
+    130deg,
+    rgba(83, 232, 139, 1) 0%,
+    rgba(21, 190, 119, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-out;
+}
+
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(4) span {
+  font-size: 15.3px;
 }
 
 .SocialMedia__Wrapper .SocialMedia__Button span a {

@@ -42,7 +42,7 @@ function SendEmail() {
   }
 
   return (
-    <div style={{ width: "50%", marginRight: "0rem" }}>
+    <div>
       <form onSubmit={sendEmail} className="input__box">
         <input
           type="text"
@@ -85,57 +85,9 @@ function SendEmail() {
         ></textarea>
         {errors.message && <p className="error">{errors.message}</p>}
 
-        {/* <div class="col-md-10">
-          <input
-            type="text"
-            className="contact name form-control"
-            id="validationCustom03"
-            required
-            placeholder="Your Full Name"
-            name="name"
-            value={values.name}
-          />
-          <div class="invalid-feedback">Please provide your name.</div>
-        </div>
-
-        <div class="col-md-10">
-          <input
-            type="text"
-            className="contact name form-control"
-            id="validationCustom03"
-            required
-            placeholder="Your Email"
-            name="user_email"
-            value={values.user_email}
-          />
-          <div class="invalid-feedback">Please provide your email.</div>
-        </div>
-        <div class="col-md-10">
-          <input
-            type="text"
-            className="contact name form-control"
-            id="validationCustom03"
-            required
-            placeholder="Your Subject"
-            name="subject"
-          />
-          <div class="invalid-feedback">Please provide your email.</div>
-        </div>
-        <div class="col-md-10">
-          <textarea
-            type="text"
-            className="contact name form-control"
-            id="validationCustom03 message"
-            required
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <div class="invalid-feedback">Please provide some message.</div>
-        </div> */}
-
         <button
           onClick={handleSubmit}
-          className="btn contact pointer"
+          className="button contact pointer"
           type="submit"
         >
           {" "}

@@ -1,14 +1,19 @@
 .contact {
   background-color: #191919;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .contact__box {
-  width: 89%;
-  margin: 0 auto;
+  width: 50%;
 }
 
 h1.hire__text {
   font-size: 60px;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 p.hire__text {
@@ -42,6 +47,13 @@ input.contact {
   background: none;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
 }
+.input__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 textarea#message {
   height: 120px;
@@ -61,8 +73,27 @@ button.btn.contact.pointer {
 .error {
   color: red;
 }
-.ContactMe_content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+button.button {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #53e88b !important;
+  background: rgb(83, 232, 139) !important;
+  background: linear-gradient(
+    130deg,
+    rgba(83, 232, 139, 1) 0%,
+    rgba(21, 190, 119, 1) 100%
+  );
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.4s all ease;
+  height: 50px;
+  width: 180px;
+  margin: 28px 10px;
+}
+
+button.button.pointer:hover {
+  background: #fff !important;
+  color: #000 !important;
 }
