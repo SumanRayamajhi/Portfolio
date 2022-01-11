@@ -19,12 +19,11 @@ function SendEmail() {
     });
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setErrors(Validation(values));
-  };
+  const handleSubmit = (event) => {};
 
   function sendEmail(event) {
+    event.preventDefault();
+    setErrors(Validation(values));
     emailjs
       .sendForm(
         "service_w5v0kmw",
@@ -43,7 +42,7 @@ function SendEmail() {
   }
 
   return (
-    <div>
+    <div style={{ width: "50%", marginRight: "0rem" }}>
       <form onSubmit={sendEmail} className="input__box">
         <input
           type="text"

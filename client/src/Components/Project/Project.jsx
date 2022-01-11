@@ -152,8 +152,7 @@ function Project() {
                   </Card.Title>
                   <Card.Text className="discription">
                     It is the project where, I am trying to aply all the stuff
-                    that I have learned during the bootcamp, and is still under
-                    process.
+                    that I have learned, and is still under process.
                   </Card.Text>
 
                   <a
@@ -163,7 +162,7 @@ function Project() {
                     Code
                   </a>
                   <a
-                    href="#"
+                    href="https://punk-beer-api-5d9c3.web.app/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >

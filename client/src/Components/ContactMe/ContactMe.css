@@ -1,5 +1,10 @@
 .contact {
   background-color: #191919;
+  width: 100%;
+}
+.contact__box {
+  width: 89%;
+  margin: 0 auto;
 }
 
 h1.hire__text {
@@ -55,4 +60,9 @@ button.btn.contact.pointer {
 }
 .error {
   color: red;
+}
+.ContactMe_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

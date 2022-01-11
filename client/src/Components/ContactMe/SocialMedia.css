@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  /* place-items: center;
+  background-color: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
+}
+.SocialMedia__Wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.SocialMedia__Wrapper .SocialMedia__Button {
+  display: block;
+  overflow: hidden;
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin: 5px 0;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.SocialMedia__Wrapper .SocialMedia__Button:hover {
+  width: 300px;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(1):hover {
+  width: 230px;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(2):hover {
+  width: 320px;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:hover span {
+  margin-top: -40px;
+  margin-left: 65px;
+}
+
+.SocialMedia__Wrapper .SocialMedia__Button .icon {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(2):hover .icon {
+  background: #4267b2;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(3):hover .icon {
+  background: #333;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(4):hover .icon {
+  background: rgb(10, 102, 194);
+}
+
+.SocialMedia__Wrapper .SocialMedia__Button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:hover .icon i {
+  color: #fff;
+}
+
+.SocialMedia__Wrapper .SocialMedia__Button span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 10px;
+  color: #4267b2 !important;
+  transition: all 0.3s ease-out;
+}
+
+.SocialMedia__Wrapper .SocialMedia__Button span a {
+  color: #4267b2;
+}
+
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(1):hover span {
+  color: #4267b2;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(2):hover span {
+  color: #4267b2;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(3):hover span {
+  color: #333;
+}
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(3):hover span {
+  color: #4267b2;
+}
