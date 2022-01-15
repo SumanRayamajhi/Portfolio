@@ -171,4 +171,14 @@ button.about.btn.pointer:hover {
   .footer.d__flex.align__items__center.justify__content__space__between.pz-10 {
     flex-wrap: wrap;
   }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

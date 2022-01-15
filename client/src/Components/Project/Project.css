@@ -122,7 +122,7 @@ button.view__more:hover {
   background-color: #302f2f;
   text-align: center;
   width: 100%;
-  height: 32rem;
+  height: 34rem;
   color: rgba(198, 201, 216, 0.75);
 }
 .Project__Image {
@@ -148,5 +148,21 @@ button.view__more:hover {
   h4.project__text {
     font-size: 20px;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Project__Cards {
+    height: 35rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  h1.heading {
+    font-size: 45px;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  p.heading.p__color {
+    padding: 0.5rem;
   }
 }

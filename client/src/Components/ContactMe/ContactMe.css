@@ -1,13 +1,11 @@
 .contact {
   background-color: #191919;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact__box {
-  width: 50%;
+  width: 95%;
+  margin-left: auto;
 }
 
 h1.hire__text {
@@ -96,4 +94,33 @@ button.button {
 button.button.pointer:hover {
   background: #fff !important;
   color: #000 !important;
+}
+.contactMe__email_icons {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  .contactMe__email_icons {
+    display: flex;
+    flex-direction: column;
+  }
+  h1.hire__text {
+    font-size: 45px;
+  }
+  button.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .input__box {
+    padding: 1rem;
+  }
 }

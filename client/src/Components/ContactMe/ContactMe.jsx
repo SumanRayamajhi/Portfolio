@@ -17,8 +17,10 @@ function ContactMe() {
           <div className="contact__meta">
             <h1 className="hire__text">Contact Me</h1>
           </div>
-          <SendEmail />
-          <SocialMedia />
+          <div className="contactMe__email_icons">
+            <SendEmail />
+            <SocialMedia />
+          </div>
         </div>
       </div>
       <BackToTopButton />

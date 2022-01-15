@@ -13,6 +13,13 @@ function SocialMedia() {
 
       <div className="SocialMedia__Button">
         <div className="icon">
+          <i class="fas fa-at"></i>
+        </div>
+        <span>sams.rayamajhi@gmail.com</span>
+      </div>
+
+      <div className="SocialMedia__Button">
+        <div className="icon">
           <i class="fab fa-github"></i>
         </div>
         <span>
@@ -30,12 +37,6 @@ function SocialMedia() {
             Linkedin Link
           </a>
         </span>
-      </div>
-      <div className="SocialMedia__Button">
-        <div className="icon">
-          <i class="fas fa-at"></i>
-        </div>
-        <span>sams.rayamajhi@gmail.com</span>
       </div>
     </div>
   );
