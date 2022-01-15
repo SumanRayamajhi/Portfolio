@@ -16,15 +16,16 @@ body {
 }
 .SocialMedia__Wrapper {
   display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+  align-items: center;
+  flex-direction: column;
 }
-.SocialMedia__Wrapper .SocialMedia__Button {
+.SocialMedia__Button {
   display: inline-block;
-  overflow: hidden;
+  border-radius: 50px;
+  margin: 20px 0;
   height: 60px;
   width: 60px;
-  margin: 0 25px;
+  overflow: hidden;
   background: rgba(198, 201, 216, 0.3);
   border-radius: 50px;
   cursor: pointer;
@@ -91,7 +92,7 @@ body {
   transition: all 0.3s ease-out;
 }
 
-.SocialMedia__Wrapper .SocialMedia__Button:nth-child(4) span {
+.SocialMedia__Wrapper .SocialMedia__Button:nth-child(2) span {
   font-size: 15.3px;
 }
 
@@ -111,3 +112,83 @@ body {
 .SocialMedia__Wrapper .SocialMedia__Button:nth-child(3):hover span {
   color: #4267b2;
 }
+
+@media only screen and (max-width: 425px) {
+  .SocialMedia__Button {
+    margin: 16px 0;
+    height: 45px;
+    width: 45px;
+  }
+  .SocialMedia__Wrapper .SocialMedia__Button .icon {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+  }
+  .SocialMedia__Wrapper .SocialMedia__Button .icon i {
+    font-size: 18px;
+    line-height: 45px;
+  }
+  .SocialMedia__Wrapper .SocialMedia__Button span {
+    font-size: 15.3px;
+  }
+  .SocialMedia__Wrapper .SocialMedia__Button:hover span {
+    margin-top: -35px;
+    margin-left: 65px;
+  }
+}
+/* 
+.SocialMedia__Button {
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 50px;
+  margin: 20px 0;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 5px 5px 11px #1a787b, -5px -5px 11px #40ffff;
+}
+.icon {
+  height: 60px;
+  width: 60px;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 50px;
+  text-align: center;
+  box-sizing: content-box;
+  line-height: 60px;
+  font-size: 20px;
+}
+span {
+  font-weight: bold;
+  margin: 0 20px;
+  font-size: 17px;
+  color: #000;
+}
+.SocialMedia__Button:hover {
+  width: 200px;
+}
+.SocialMedia__Button:nth-child(1):hover .icon {
+  background-color: red;
+  color: white;
+}
+.SocialMedia__Button:nth-child(2):hover .icon {
+  background-color: #e7d10d;
+  color: white;
+}
+.SocialMedia__Button:nth-child(3):hover .icon {
+  background-color: #1b17f7;
+  color: white;
+}
+.SocialMedia__Button:nth-child(4):hover .icon {
+  background-color: #9d17f7;
+  color: white;
+}
+.SocialMedia__Button:nth-child(5):hover .icon {
+  background-color: #3aff08;
+  color: white;
+}
+.SocialMedia__Button:nth-child(6):hover .icon {
+  background-color: #ff00dd;
+  color: white;
+} */

@@ -1,8 +1,6 @@
 import React from "react";
 import "./Project.css";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import CardGroup from "react-bootstrap/CardGroup";
 
 function Project() {
   return (
@@ -12,29 +10,11 @@ function Project() {
         <p className="heading p__color">
           These are my few projects and are still on under-construction
         </p>
-        {/* <p className="heading p__color">............................</p> */}
       </div>
       <div className="container">
         <div className="row">
           <div className="col__3">
             <div className="project__box ">
-              {/* <div className="project__box__img pointer relative"> */}
-              {/* <div className="project__img__box">
-                  <img
-                    src="./img/Hoste-1.png"
-                    alt="img"
-                    className="project__img"
-                  />
-                </div>
-                <div className="mask__effect"></div>
-              </div>
-              <div className="project__meta absolute">
-                <h5 className="project__text">Development</h5>
-                <h4 className="project__text">Getting ticket to big.....</h4>
-                <a href="#" className="project__btn">
-                  View Details
-                </a>
-              </div> */}
               <Card className="Project__Cards">
                 <Card.Img
                   className="Project__Image"
@@ -70,23 +50,6 @@ function Project() {
 
           <div className="col__3">
             <div className="project__box">
-              {/* <div className="project__box__img pointer relative">
-                <div className="project__img__box">
-                  <img
-                    src="./img/portfolio-2.jpg"
-                    alt="img"
-                    className="project__img"
-                  />
-                </div>
-                <div className="mask__effect"></div>
-              </div>
-              <div className="project__meta absolute">
-                <h5 className="project__text">Development</h5>
-                <h4 className="project__text">Getting ticket to big.....</h4>
-                <a href="#" className="project__btn">
-                  View Details
-                </a>
-              </div> */}
               <Card className="Project__Cards">
                 <Card.Img
                   className="Project__Image"
@@ -123,23 +86,6 @@ function Project() {
 
           <div className="col__3">
             <div className="project__box pointer relative">
-              {/* <div className="project__box__img pointer relative">
-                <div className="project__img__box">
-                  <img
-                    src="./img/portfolio-3.jpg"
-                    alt="img"
-                    className="project__img"
-                  />
-                </div>
-                <div className="mask__effect"></div>
-              </div>
-              <div className="project__meta absolute">
-                <h5 className="project__text">Development</h5>
-                <h4 className="project__text">Getting ticket to big.....</h4>
-                <a href="#" className="project__btn">
-                  View Details
-                </a>
-              </div> */}
               <Card className="Project__Cards">
                 <Card.Img
                   variant="top"
@@ -172,10 +118,6 @@ function Project() {
               </Card>
             </div>
           </div>
-
-          {/* <div className="view__more_btn d__flex align__items__center justify__content__center pxy__30">
-            <button className="view__more pointer btn"> View More</button>
-          </div> */}
         </div>
       </div>
     </div>

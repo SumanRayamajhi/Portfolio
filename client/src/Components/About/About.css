@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300;400;500;700;900&display=swap");
 .about {
   background: #191919;
+  margin-top: -1rem;
 }
 img.about__img {
   border-radius: 10px;
@@ -50,5 +51,36 @@ button.about.btn.pointer {
     height: 50px;
     font-size: 13px;
     transition: 0.4s ease;
+  }
+  h1.about__heading {
+    font-size: 45px;
+  }
+
+  button.about.btn.pointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .About__skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  .About__skills__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
   }
 }

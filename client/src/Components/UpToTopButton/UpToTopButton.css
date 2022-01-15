@@ -18,3 +18,10 @@ a.bottom__to__top.active {
 .middle__arrow {
   color: #fff;
 }
+@media only screen and (max-width: 425px) {
+  a.bottom__to__top {
+    width: 35px;
+    height: 35px;
+    align-items: center;
+  }
+}

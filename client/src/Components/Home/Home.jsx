@@ -10,6 +10,10 @@ function Home() {
 
   const [showMenue, setShowMenue] = useState(true);
 
+  const onClick = () => {
+    setShowMenue(!showMenue);
+  };
+
   return (
     <div className="home" id="Home">
       <div className="home__bg">
@@ -36,10 +40,7 @@ function Home() {
 
           {/* Toogle menue */}
           <div className="toggle__menu">
-            <BsList
-              onClick={() => setShowMenue(!showMenue)}
-              className="white toogle__pointer"
-            />
+            <BsList className="white toogle__pointer" onClick={onClick} />
           </div>
 
           {showMenue ? (

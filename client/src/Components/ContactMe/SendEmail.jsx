@@ -3,7 +3,12 @@ import emailjs from "emailjs-com";
 import "./ContactMe.css";
 import Validation from "./Validation";
 
+const Result = () => {
+  return <p>Thankyou! Your message has been succesfully sent.</p>;
+};
+
 function SendEmail() {
+  const [result, setResult] = useState(false);
   const [errors, setErrors] = useState({});
   const [values, setValues] = useState({
     full_name: "",
@@ -19,9 +24,7 @@ function SendEmail() {
     });
   };
 
-  const handleSubmit = (event) => {};
-
-  function sendEmail(event) {
+  const sendEmail = (event) => {
     event.preventDefault();
     setErrors(Validation(values));
     emailjs
@@ -39,7 +42,9 @@ function SendEmail() {
           console.log(error.text);
         }
       );
-  }
+    event.target.reset();
+    setResult();
+  };
 
   return (
     <div>
@@ -85,14 +90,11 @@ function SendEmail() {
         ></textarea>
         {errors.message && <p className="error">{errors.message}</p>}
 
-        <button
-          onClick={handleSubmit}
-          className="button contact pointer"
-          type="submit"
-        >
+        <button className="button contact pointer" type="submit">
           {" "}
           Submit
         </button>
+        <div className="row test-light">{result ? <Result /> : null}</div>
       </form>
     </div>
   );

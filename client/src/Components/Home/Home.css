@@ -111,6 +111,7 @@ li.sideNavbar {
   }
   .toggle__menu {
     display: flex;
+    margin: 0.5rem;
   }
   ul.sidebar.d__flex {
     display: flex;
@@ -119,9 +120,14 @@ li.sideNavbar {
 
 @media only screen and (max-width: 425px) {
   h2.home__text.pz__10 {
-    font-size: 25px !important;
+    font-size: 38px !important;
   }
   h3.sweet.pz__10 {
     font-size: 30px;
+  }
+  .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
