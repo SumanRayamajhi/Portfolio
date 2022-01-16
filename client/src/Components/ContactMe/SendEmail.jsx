@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "./ContactMe.css";
 import Validation from "./Validation";
-
-const Result = () => {
-  return <p>Thankyou! Your message has been succesfully sent.</p>;
-};
+import Alert from "react-bootstrap/Alert";
 
 function SendEmail() {
-  const [result, setResult] = useState(false);
-  const [errors, setErrors] = useState({});
-  const [values, setValues] = useState({
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+  const [formValues, setFormValues] = useState({
     full_name: "",
     user_email: "",
     subject: "",
@@ -18,15 +15,21 @@ function SendEmail() {
   });
 
   const handleChange = (event) => {
-    setValues({
-      ...values,
+    setFormValues({
+      ...formValues,
       [event.target.name]: event.target.value,
     });
   };
 
+  useEffect(() => {
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+    }
+  });
+
   const sendEmail = (event) => {
     event.preventDefault();
-    setErrors(Validation(values));
+    setFormErrors(Validation(formValues));
+    setIsSubmit(true);
     emailjs
       .sendForm(
         "service_w5v0kmw",
@@ -42,42 +45,50 @@ function SendEmail() {
           console.log(error.text);
         }
       );
-    event.target.reset();
-    setResult();
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      setFormValues({
+        full_name: "",
+        user_email: "",
+        subject: "",
+        message: "",
+      });
+    }
   };
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={sendEmail} className="input__box">
         <input
           type="text"
           className="contact name"
           placeholder="Your Full Name"
           name="full_name"
-          value={values.full_name}
+          value={formValues.full_name}
           onChange={handleChange}
         />
-        {errors.full_name && <p className="error">{errors.full_name}</p>}
+
+        <p className="error">{formErrors.full_name}</p>
 
         <input
           type="text"
           className="contact name"
           placeholder="Your Email"
           name="user_email"
-          value={values.user_email}
+          value={formValues.user_email}
           onChange={handleChange}
         />
-        {errors.user_email && <p className="error">{errors.user_email}</p>}
+
+        <p className="error">{formErrors.user_email}</p>
 
         <input
           type="text"
           className="contact name"
           placeholder="Your Subject"
           name="subject"
-          value={values.subject}
+          value={formValues.subject}
           onChange={handleChange}
         />
-        {errors.subject && <p className="error">{errors.subject}</p>}
+        <p className="error">{formErrors.subject}</p>
 
         <textarea
           type="text"
@@ -85,16 +96,21 @@ function SendEmail() {
           placeholder="Message"
           id="message"
           name="message"
-          value={values.message}
+          value={formValues.message}
           onChange={handleChange}
         ></textarea>
-        {errors.message && <p className="error">{errors.message}</p>}
+        <p className="error">{formErrors.message}</p>
+
+        {Object.keys(formErrors).length === 0 && isSubmit ? (
+          <div className="text">
+            Thank you! <br></br>Message has been sent!
+          </div>
+        ) : null}
 
         <button className="button contact pointer" type="submit">
           {" "}
           Submit
         </button>
-        <div className="row test-light">{result ? <Result /> : null}</div>
       </form>
     </div>
   );

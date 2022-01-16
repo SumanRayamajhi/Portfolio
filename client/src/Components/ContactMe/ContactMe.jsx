@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactMe.css";
-import BackToTopButton from "../UpToTopButton/UpToTopButton";
+import BackToTopButton from "../BackToTopButton/BackToTopButton";
 import SendEmail from "./SendEmail";
 import SocialMedia from "./SocialMedia";
 
@@ -9,6 +9,12 @@ function ContactMe() {
     const BackToTopButton = document.querySelector("a.bottom__to__top");
     BackToTopButton.classList.toggle("active", this.window.scrollY > 0);
   });
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="contact component__space" id="Contact">
@@ -23,7 +29,7 @@ function ContactMe() {
           </div>
         </div>
       </div>
-      <BackToTopButton />
+      <BackToTopButton onClick={scrollToTop} />
     </div>
   );
 }

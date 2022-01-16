@@ -1,8 +1,8 @@
 import React from "react";
-import "./UpToTopButton.css";
+import "./BackToTopButton.css";
 import { BsChevronUp } from "react-icons/bs";
 
-function UpToTopButton() {
+function BackToTopButton() {
   return (
     <div className="up__to__top__btn">
       <a href="#" className="bottom__to__top">
@@ -12,4 +12,4 @@ function UpToTopButton() {
   );
 }
 
-export default UpToTopButton;
+export default BackToTopButton;

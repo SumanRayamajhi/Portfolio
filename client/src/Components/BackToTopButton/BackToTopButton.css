@@ -15,6 +15,9 @@ a.bottom__to__top {
 a.bottom__to__top.active {
   display: flex;
 }
+a.bottom__to__top:hover {
+  box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.3);
+}
 .middle__arrow {
   color: #fff;
 }
