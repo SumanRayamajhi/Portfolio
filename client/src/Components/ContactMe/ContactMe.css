@@ -56,9 +56,9 @@ input.contact {
 textarea#message {
   height: 120px;
   background: none;
-  padding: 0px 20px;
+  padding: 10px 20px;
   width: 100%;
-  line-height: 46px;
+  line-height: 23px;
   color: #fff;
   font-size: 15px;
   letter-spacing: 0.1px;
@@ -99,6 +99,17 @@ button.button.pointer:hover {
   display: grid;
   grid-template-columns: 2fr 2fr;
   width: 100%;
+}
+.last-part {
+  display: flex;
+}
+.text {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(198, 201, 216, 0.75);
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 425px) {
