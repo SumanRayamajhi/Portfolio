@@ -161,6 +161,9 @@ button.about.btn.pointer:hover {
   .col__3 {
     max-width: 50%;
   }
+  button.btn {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 425px) {
   .col__3 {

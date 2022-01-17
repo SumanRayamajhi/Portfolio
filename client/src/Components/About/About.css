@@ -41,7 +41,24 @@ button.about.btn.pointer {
 
 @media only screen and (max-width: 1024px) {
   p.p__color {
-    font-size: 15px !important;
+    font-size: 19px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .About__skills__title {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .About__skills__list {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .About__skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -72,13 +89,7 @@ button.about.btn.pointer {
     justify-content: center;
     align-items: center;
   }
-  .About__skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1.5rem;
-  }
+
   .About__skills__list {
     display: flex;
     justify-content: center;
