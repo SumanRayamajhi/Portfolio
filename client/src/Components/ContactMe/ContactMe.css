@@ -58,6 +58,7 @@ input.contact {
 textarea#message {
   height: 120px;
   background: none;
+  margin-top: 1rem;
   padding: 10px 20px;
   width: 100%;
   line-height: 23px;
