@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Home.css";
-import { BsList } from "react-icons/bs";
+import { CgMenu } from "react-icons/cg";
+import { CgClose } from "react-icons/cg";
+import NavLinks from "./NavLinks";
+import NavLinksMobile from "./NavLinksMobile";
 
 function Home() {
   window.addEventListener("scroll", function () {
@@ -8,8 +11,11 @@ function Home() {
     header.classList.toggle("active", this.window.scrollY > 0);
   });
 
-  const [showMenue, setShowMenue] = useState(true);
+  const [showMenue, setShowMenue] = useState(false);
 
+  const closeMobileMenu = () => {
+    setShowMenue(false);
+  };
   const onClick = () => {
     setShowMenue(!showMenue);
   };
@@ -18,48 +24,24 @@ function Home() {
     <div className="home" id="Home">
       <div className="home__bg">
         <div className="header d__flex align__items__center pxy__30">
-          {/* <div className="logo">
-            <h3>Logo</h3>
-          </div> */}
           <div className="navigation pxy__30">
-            <ul className="navbar d__flex">
-              <a href="#Home">
-                <li className="nav__items mx__15">Home</li>
-              </a>
-              <a href="#About">
-                <li className="nav__items mx__15">About</li>
-              </a>
-              <a href="#Project">
-                <li className="nav__items mx__15">Project</li>
-              </a>
-              <a href="#Contact">
-                <li className="nav__items mx__15">Contact</li>
-              </a>
-            </ul>
+            <NavLinks />
           </div>
 
           {/* Toogle menue */}
           <div className="toggle__menu">
-            <BsList className="white toogle__pointer" onClick={onClick} />
+            {showMenue ? (
+              <CgClose className="white toogle__pointer" onClick={onClick} />
+            ) : (
+              <CgMenu className="white toogle__pointer" onClick={onClick} />
+            )}
           </div>
 
           {showMenue ? (
-            <div className="sideNavbar">
-              <ul className="sidebar d__flex">
-                <li className="sideNavbar">
-                  <a href="#Home">Home</a>
-                </li>
-                <li className="sideNavbar">
-                  <a href="#About">About</a>
-                </li>
-                <li className="sideNavbar">
-                  <a href="#Project">Project</a>
-                </li>
-                <li className="sideNavbar">
-                  <a href="#Contact">Contact</a>
-                </li>
-              </ul>
-            </div>
+            <NavLinksMobile
+              isMobile={true}
+              closeMobileMenue={closeMobileMenu}
+            />
           ) : null}
         </div>
         <div className="container">
@@ -75,7 +57,7 @@ function Home() {
                 </h3>
               </div>
             </div>
-            <div className="col__2">
+            <div className="col__2 ">
               <img src="/img/home.jpg" alt="img" className="about__img" />
             </div>
           </div>

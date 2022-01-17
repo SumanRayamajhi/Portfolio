@@ -116,6 +116,9 @@ li.sideNavbar {
   ul.sidebar.d__flex {
     display: flex;
   }
+  .home__meta {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -129,5 +132,8 @@ li.sideNavbar {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .home .col__2 img {
+    display: none;
   }
 }
