@@ -48,7 +48,6 @@ function Home() {
           <div className="row">
             <div className="home__content">
               <div className="home__meta">
-                {/* <h1 className="home__text pz__10">Welcome to my world</h1> */}
                 <h2 className="home__text pz__10">
                   Hello! I am <br></br> Suman Rayamajhi
                 </h2>

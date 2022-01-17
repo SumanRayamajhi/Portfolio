@@ -119,6 +119,9 @@ li.sideNavbar {
   .home__meta {
     text-align: center;
   }
+  h3.home__text {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
