@@ -45,6 +45,9 @@ button.about.btn.pointer {
   }
 }
 @media only screen and (max-width: 425px) {
+  .about {
+    margin-top: -3rem;
+  }
   button.about.btn.pointer {
     text-transform: capitalize;
     width: 165px;

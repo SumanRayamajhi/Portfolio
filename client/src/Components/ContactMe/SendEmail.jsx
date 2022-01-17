@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "./ContactMe.css";
 import Validation from "./Validation";
-import Alert from "react-bootstrap/Alert";
 
 function SendEmail() {
   const [formErrors, setFormErrors] = useState({});
