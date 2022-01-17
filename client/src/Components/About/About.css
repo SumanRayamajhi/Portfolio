@@ -60,6 +60,9 @@ button.about.btn.pointer {
     flex-direction: column;
     margin-top: 1.5rem;
   }
+  h1.about__heading {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 425px) {
   .about {
