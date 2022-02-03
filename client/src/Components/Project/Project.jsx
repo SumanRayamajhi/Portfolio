@@ -73,7 +73,7 @@ function Project() {
                     Code
                   </a>
                   <a
-                    href="#"
+                    href="https://chat-server-frontend.herokuapp.com/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >
