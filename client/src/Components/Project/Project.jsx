@@ -37,7 +37,7 @@ function Project() {
                     Code
                   </a>
                   <a
-                    href="https://hostel-life-app.herokuapp.com"
+                    href="http://hostel-life-app.herokuapp.com/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >
