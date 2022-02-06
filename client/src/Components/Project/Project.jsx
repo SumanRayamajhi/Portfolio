@@ -90,7 +90,7 @@ function Project() {
                 <Card.Img
                   variant="top"
                   className="Project__Image"
-                  src="./img/beer-6.jpg"
+                  src="./img/punk-beer.jpg"
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
@@ -102,13 +102,13 @@ function Project() {
                   </Card.Text>
 
                   <a
-                    href="https://github.com/SumanRayamajhi/Punk-Beer-Api"
+                    href="https://github.com/SumanRayamajhi/API-punk-beer"
                     className="project__btn"
                   >
                     Code
                   </a>
                   <a
-                    href="https://punk-beer-api-5d9c3.web.app/"
+                    href="https://api-punk-beer.web.app/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >
