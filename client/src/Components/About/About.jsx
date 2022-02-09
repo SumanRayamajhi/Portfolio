@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaBootstrap,
+} from "react-icons/fa";
+import { DiJavascript, DiPostgresql } from "react-icons/di";
+import { FiFigma } from "react-icons/fi";
 import "./About.css";
 
 function About() {
@@ -22,13 +31,38 @@ function About() {
               <div className="About__skills">
                 <h2 className="About__skills__title">Skills</h2>
                 <ul className="About__skills__list">
-                  <li>HTML and CSS</li>
-                  <li>Javascript</li>
-                  <li>React</li>
-                  <li>Node</li>
-                  <li>SQL</li>
-                  <li>Bootstrap</li>
-                  <li>Figma</li>
+                  <li>
+                    {" "}
+                    <FaHtml5 /> <span> HTML</span>
+                  </li>
+                  <li>
+                    <FaCss3Alt />
+                    <span> CSS</span>
+                  </li>
+                  <li>
+                    <DiJavascript />
+                    <span> Javascript</span>
+                  </li>
+                  <li>
+                    <FaReact />
+                    <span> React</span>
+                  </li>
+                  <li>
+                    <FaNodeJs />
+                    <span> Node</span>
+                  </li>
+                  <li>
+                    <DiPostgresql />
+                    <span> PostgreSQL</span>
+                  </li>
+                  <li>
+                    <FaBootstrap />
+                    <span> Bootstrap</span>
+                  </li>
+                  <li>
+                    <FiFigma />
+                    <span> Figma</span>
+                  </li>
                 </ul>
 
                 <div className="about__button d__flex align__items__center">

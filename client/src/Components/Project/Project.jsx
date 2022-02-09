@@ -97,8 +97,9 @@ function Project() {
                     Punk Beer API
                   </Card.Title>
                   <Card.Text className="discription">
-                    It is the project where, I am trying to aply all the stuff
-                    that I have learned, and is still under process.
+                    Project with punk-API, using Reactjs. We can select a
+                    favourites with clicking the stars and also delete the
+                    favourite.
                   </Card.Text>
 
                   <a

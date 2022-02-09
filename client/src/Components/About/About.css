@@ -39,6 +39,16 @@ button.about.btn.pointer {
   margin-bottom: 15px;
 }
 
+.About__skills__list li {
+  display: flex;
+}
+
+.About__skills__list li span {
+  margin-left: 10px;
+  position: relative;
+  top: -6px;
+}
+
 @media only screen and (max-width: 1024px) {
   p.p__color {
     font-size: 19px !important;
