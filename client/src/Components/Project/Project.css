@@ -93,6 +93,8 @@ a.project__btn:hover {
     rgba(83, 232, 139, 1) 0%,
     rgba(21, 190, 119, 1) 100%
   );
+  color: #302f2f;
+  font-weight: 500;
 }
 
 button.btn {
