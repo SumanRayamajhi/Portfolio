@@ -26,8 +26,8 @@ function Project() {
                     Hostel Life
                   </Card.Title>
                   <Card.Text className="discription">
-                    It is a final project made by group of friends using
-                    Bootstrap, React.js, Node.js and PostgreSQL
+                    Final project made by group of friends using PERN stack with
+                    CRUD operations, including Bootstrap for the framework.
                   </Card.Text>
 
                   <a
@@ -38,42 +38,6 @@ function Project() {
                   </a>
                   <a
                     href="http://hostel-life-app.herokuapp.com/"
-                    className="project__btn"
-                    style={{ marginLeft: "1rem" }}
-                  >
-                    Link
-                  </a>
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
-
-          <div className="col__3">
-            <div className="project__box">
-              <Card className="Project__Cards">
-                <Card.Img
-                  className="Project__Image"
-                  variant="top"
-                  src="./img/chat-message-7.jpg"
-                />
-                <Card.Body>
-                  <Card.Title className="Portfolio__title">
-                    Chat Server
-                  </Card.Title>
-                  <Card.Text className="discription">
-                    It is the first project where I connect front-end (React.js)
-                    and back-end(PostgreSQL and Node.js) together.
-                  </Card.Text>
-                  {/* <Button variant="primary">Go somewhere</Button> */}
-
-                  <a
-                    href="https://github.com/SumanRayamajhi/node-challenge-chat-server"
-                    className="project__btn"
-                  >
-                    Code
-                  </a>
-                  <a
-                    href="https://chat-server-frontend.herokuapp.com/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >
@@ -110,6 +74,42 @@ function Project() {
                   </a>
                   <a
                     href="https://api-punk-beer.web.app/"
+                    className="project__btn"
+                    style={{ marginLeft: "1rem" }}
+                  >
+                    Link
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+
+          <div className="col__3">
+            <div className="project__box">
+              <Card className="Project__Cards">
+                <Card.Img
+                  className="Project__Image"
+                  variant="top"
+                  src="./img/chat-message-7.jpg"
+                />
+                <Card.Body>
+                  <Card.Title className="Portfolio__title">
+                    Chat Server
+                  </Card.Title>
+                  <Card.Text className="discription">
+                    First project using PERN stack, and is under construction to
+                    add different functionalities.
+                  </Card.Text>
+                  {/* <Button variant="primary">Go somewhere</Button> */}
+
+                  <a
+                    href="https://github.com/SumanRayamajhi/node-challenge-chat-server"
+                    className="project__btn"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="https://chat-server-frontend.herokuapp.com/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >
