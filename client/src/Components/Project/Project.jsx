@@ -119,6 +119,78 @@ function Project() {
               </Card>
             </div>
           </div>
+
+          <div className="col__3">
+            <div className="project__box">
+              <Card className="Project__Cards">
+                <Card.Img
+                  className="Project__Image"
+                  variant="top"
+                  src="/img/tic-tac-toe-game.jpg"
+                />
+                <Card.Body>
+                  <Card.Title className="Portfolio__title">
+                    Tic Tac Toe Game
+                  </Card.Title>
+                  <Card.Text className="discription">
+                    Tic tac toe game using Reactjs.
+                  </Card.Text>
+                  {/* <Button variant="primary">Go somewhere</Button> */}
+
+                  <a
+                    href="https://github.com/SumanRayamajhi/tik-tak-toe-game"
+                    className="project__btn"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="https://tic-tac-toe--game.herokuapp.com/"
+                    className="project__btn"
+                    style={{ marginLeft: "1rem" }}
+                  >
+                    Link
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+
+          <div className="col__3">
+            <div className="project__box">
+              <Card className="Project__Cards">
+                <Card.Img
+                  className="Project__Image"
+                  variant="top"
+                  src="/img/to-do-list.jpg"
+                />
+                <Card.Body>
+                  <Card.Title className="Portfolio__title">
+                    To Do List
+                  </Card.Title>
+                  <Card.Text className="discription">
+                    To do list App, we can add different activities. We can
+                    delete and marked as done and also can filter completed and
+                    uncompleted task.
+                  </Card.Text>
+                  {/* <Button variant="primary">Go somewhere</Button> */}
+
+                  <a
+                    href="https://github.com/SumanRayamajhi/to-do-app"
+                    className="project__btn"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="https://suman-to-do-list.herokuapp.com/"
+                    className="project__btn"
+                    style={{ marginLeft: "1rem" }}
+                  >
+                    Link
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
