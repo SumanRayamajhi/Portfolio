@@ -191,6 +191,39 @@ function Project() {
               </Card>
             </div>
           </div>
+
+          <div className="col__3">
+            <div className="project__box">
+              <Card className="Project__Cards">
+                <Card.Img
+                  className="Project__Image"
+                  variant="top"
+                  src="/img/calculator.jpg"
+                />
+                <Card.Body>
+                  <Card.Title className="Portfolio__title">
+                    Redux Calculator
+                  </Card.Title>
+                  <Card.Text className="discription">
+                    Calculator, using react-redux library.
+                  </Card.Text>
+                  <a
+                    href="https://github.com/SumanRayamajhi/Redux--Calculator"
+                    className="project__btn"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="https://redux--calculator.herokuapp.com/"
+                    className="project__btn"
+                    style={{ marginLeft: "1rem" }}
+                  >
+                    Link
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
