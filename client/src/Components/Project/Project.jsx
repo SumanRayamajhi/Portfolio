@@ -144,7 +144,7 @@ function Project() {
                     Code
                   </a>
                   <a
-                    href="https://tic-tac-toe--game.herokuapp.com/"
+                    href="https://tic-tac-toe-game-a70aa.web.app/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >
@@ -181,7 +181,7 @@ function Project() {
                     Code
                   </a>
                   <a
-                    href="https://suman-to-do-list.herokuapp.com/"
+                    href="https://to-do-list-cea9d.web.app/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >
@@ -214,7 +214,7 @@ function Project() {
                     Code
                   </a>
                   <a
-                    href="https://redux--calculator.herokuapp.com/"
+                    href="https://redux-calculator-1bf1e.web.app/"
                     className="project__btn"
                     style={{ marginLeft: "1rem" }}
                   >
