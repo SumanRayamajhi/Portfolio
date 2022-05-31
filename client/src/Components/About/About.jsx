@@ -67,8 +67,8 @@ function About() {
 
                 <div className="about__button d__flex align__items__center">
                   <a
-                    href="Suman-Rayamajhi-CV.pdf"
-                    download={"Suman-Rayamajhi-CV.pdf"}
+                    href="SumanRayamajhi-CV.pdf"
+                    download={"SumanRayamajhi-CV.pdf"}
                   >
                     {" "}
                     <button className="about btn pointer">Download CV</button>
