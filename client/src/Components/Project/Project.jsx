@@ -224,6 +224,106 @@ function Project() {
               </Card>
             </div>
           </div>
+
+          <div className="col__3">
+            <div className="project__box">
+              <Card className="Project__Cards">
+                <Card.Img
+                  className="Project__Image"
+                  variant="top"
+                  src="/img/giphy-app.jpg"
+                />
+                <Card.Body>
+                  <Card.Title className="Portfolio__title">
+                    Giphy API
+                  </Card.Title>
+                  <Card.Text className="discription">
+                    Giphy API using React freamework, added search box and the
+                    pages.
+                  </Card.Text>
+                  <a
+                    href="https://github.com/SumanRayamajhi/Giphy-API"
+                    className="project__btn"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="https://giphy-api-ba696.web.app/"
+                    className="project__btn"
+                    style={{ marginLeft: "1rem" }}
+                  >
+                    Link
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+
+          <div className="col__3">
+            <div className="project__box">
+              <Card className="Project__Cards">
+                <Card.Img
+                  className="Project__Image"
+                  variant="top"
+                  src="/img/candy-crush.jpg"
+                />
+                <Card.Body>
+                  <Card.Title className="Portfolio__title">
+                    Candy Crush Game
+                  </Card.Title>
+                  <Card.Text className="discription">
+                    Simple Candy Crush game using React framework.
+                  </Card.Text>
+                  <a
+                    href="https://github.com/SumanRayamajhi/CandyCrush-Game"
+                    className="project__btn"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="https://candycrush-f09a4.web.app/"
+                    className="project__btn"
+                    style={{ marginLeft: "1rem" }}
+                  >
+                    Link
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+
+          <div className="col__3">
+            <div className="project__box">
+              <Card className="Project__Cards">
+                <Card.Img
+                  className="Project__Image"
+                  variant="top"
+                  src="/img/connect-four.jpg"
+                />
+                <Card.Body>
+                  <Card.Title className="Portfolio__title">
+                    Connect Four Game
+                  </Card.Title>
+                  <Card.Text className="discription">
+                    Connect Four Game using React framework.
+                  </Card.Text>
+                  <a
+                    href="https://github.com/SumanRayamajhi/Connect-Four-Game/tree/master/src"
+                    className="project__btn"
+                  >
+                    Code
+                  </a>
+                  <a
+                    href="https://connect-four-game-aebdd.web.app/"
+                    className="project__btn"
+                    style={{ marginLeft: "1rem" }}
+                  >
+                    Link
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
