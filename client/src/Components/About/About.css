@@ -31,19 +31,22 @@ button.about.btn.pointer {
 .About__skills__title {
   font-size: 30px;
 }
-.About__skills__list {
+.About__skills__lists {
   color: rgba(198, 201, 216, 0.75);
   font-size: 18px;
   line-height: 30px;
   font-family: Poppins, sans-serif;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.About__skills__list li {
+.About__skills__list {
   display: flex;
 }
 
-.About__skills__list li span {
+.About__skills__list span {
   margin-left: 10px;
   position: relative;
   top: -6px;
@@ -59,7 +62,7 @@ button.about.btn.pointer {
     text-align: center;
     margin-top: 2rem;
   }
-  .About__skills__list {
+  .About__skills__lists {
     text-align: center;
     margin-top: 1rem;
   }
@@ -103,7 +106,7 @@ button.about.btn.pointer {
     align-items: center;
   }
 
-  .About__skills__list {
+  .About__skills__lists {
     display: flex;
     justify-content: center;
     align-items: center;

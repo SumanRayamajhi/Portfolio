@@ -30,45 +30,45 @@ function About() {
               </p>
               <div className="About__skills">
                 <h2 className="About__skills__title">Skills</h2>
-                <ul className="About__skills__list">
-                  <li>
-                    {" "}
-                    <FaHtml5 /> <span> HTML</span>
-                  </li>
-                  <li>
-                    <FaCss3Alt />
-                    <span> CSS</span>
-                  </li>
-                  <li>
-                    <DiJavascript />
-                    <span> Javascript</span>
-                  </li>
-                  <li>
-                    <FaReact />
-                    <span> React</span>
-                  </li>
-                  <li>
-                    <FaNodeJs />
-                    <span> Node</span>
-                  </li>
-                  <li>
-                    <DiPostgresql />
-                    <span> PostgreSQL</span>
-                  </li>
-                  <li>
-                    <FaBootstrap />
-                    <span> Bootstrap</span>
-                  </li>
-                  <li>
-                    <FiFigma />
-                    <span> Figma</span>
-                  </li>
-                </ul>
+                <div className="About__skills__lists">
+                  <div>
+                    <div className="About__skills__list">
+                      <FaHtml5 /> <span> HTML</span>
+                    </div>
+                    <div className="About__skills__list">
+                      <FaCss3Alt /> <span> CSS</span>
+                    </div>
+                    <div className="About__skills__list">
+                      <DiJavascript /> <span> Javascript</span>
+                    </div>
+                    <div className="About__skills__list">
+                      <FaReact /> <span> React</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="About__skills__list">
+                      <FaNodeJs />
+                      <span> Node</span>
+                    </div>
+                    <div className="About__skills__list">
+                      <DiPostgresql />
+                      <span> PostgreSQL</span>
+                    </div>
+                    <div className="About__skills__list">
+                      <FaBootstrap />
+                      <span> Bootstrap</span>
+                    </div>
+                    <div className="About__skills__list">
+                      <FiFigma />
+                      <span> Figma</span>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="about__button d__flex align__items__center">
                   <a
-                    href="SumanRayamajhi-CV.pdf"
-                    download={"SumanRayamajhi-CV.pdf"}
+                    href="SumanRayamajhi_CV.pdf"
+                    download={"SumanRayamajhi_CV.pdf"}
                   >
                     {" "}
                     <button className="about btn pointer">Download CV</button>
