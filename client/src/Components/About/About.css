@@ -3,6 +3,13 @@
   background: #191919;
   margin-top: -1rem;
 }
+
+.about__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img.about__img {
   border-radius: 10px;
   width: 100%;
@@ -52,12 +59,17 @@ button.about.btn.pointer {
   top: -6px;
 }
 
+.next-logo {
+  height: 15px;
+  width: 15px;
+}
+
 @media only screen and (max-width: 1024px) {
   p.p__color {
     font-size: 19px !important;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
   .About__skills__title {
     text-align: center;
     margin-top: 2rem;
@@ -73,6 +85,7 @@ button.about.btn.pointer {
     flex-direction: column;
     margin-top: 1.5rem;
   }
+
   h1.about__heading {
     text-align: center;
   }
@@ -108,7 +121,7 @@ button.about.btn.pointer {
 
   .About__skills__lists {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
