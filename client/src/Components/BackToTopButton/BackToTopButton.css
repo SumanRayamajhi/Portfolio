@@ -4,11 +4,16 @@ a.bottom__to__top {
   position: fixed;
   bottom: 2%;
   right: 2%;
-  background-color: #000;
+  background: rgb(83, 232, 139) !important;
+  background: linear-gradient(
+    130deg,
+    rgba(83, 232, 139, 1) 0%,
+    rgba(21, 190, 119, 1) 100%
+  );
   border-radius: 50%;
   cursor: pointer;
   display: none;
-  transition: 0.4s all ease;
+  transition: 0.4s all ease-out;
   align-items: center;
   justify-content: center;
 }

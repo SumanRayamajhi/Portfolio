@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 .home__bg {
-  /* background-image: url(C:\Users\Migracode\Desktop\PortfolioSuman\client\public\img\bg-5.jpg); */
   background-color: #010101;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,6 +23,15 @@ li.nav__items:hover {
   -webkit-text-fill-color: transparent;
   font-weight: 500;
   transition: 0.4s all ease;
+}
+
+li.nav__items .active {
+  color: rgb(83, 232, 139);
+  color: -webkit-linear-gradient(
+    130deg,
+    rgba(83, 232, 139, 1) 0%,
+    rgba(21, 190, 119, 1) 100%
+  );
 }
 
 .home__content {

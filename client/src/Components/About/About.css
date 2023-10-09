@@ -51,6 +51,7 @@ button.about.btn.pointer {
 
 .About__skills__list {
   display: flex;
+  color: #bbb7b7;
 }
 
 .About__skills__list span {
@@ -77,6 +78,9 @@ button.about.btn.pointer {
   .About__skills__lists {
     text-align: center;
     margin-top: 1rem;
+  }
+  .About__skills__list {
+    margin-left: 4rem;
   }
   .About__skills {
     display: flex;
@@ -120,9 +124,6 @@ button.about.btn.pointer {
   }
 
   .About__skills__lists {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
     margin-top: 1rem;
   }

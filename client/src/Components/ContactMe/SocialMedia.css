@@ -11,8 +11,6 @@ body {
   display: grid;
   height: 100%;
   width: 100%;
-  /* place-items: center;
-  background-color: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
 }
 .SocialMedia__Wrapper {
   display: flex;
@@ -49,31 +47,37 @@ body {
   display: inline-block;
   height: 60px;
   width: 60px;
-  background-color: #333;
   border-radius: 50px;
   text-align: center;
   box-sizing: border-box;
   line-height: 60px;
   transition: all 0.3s ease-out;
   box-shadow: -7px -7px 20px 0;
-}
-.SocialMedia__Wrapper .SocialMedia__Button:hover .icon {
-  background: rgb(83, 232, 139);
-  background: -webkit-linear-gradient(
+  background-color: rgb(83, 232, 139);
+  background-color: -webkit-linear-gradient(
     130deg,
     rgba(83, 232, 139, 1) 0%,
     rgba(21, 190, 119, 1) 100%
   );
 }
+.SocialMedia__Wrapper .SocialMedia__Button:hover .icon {
+  background-color: #fff;
+}
 
 .SocialMedia__Wrapper .SocialMedia__Button .icon i {
   font-size: 25px;
   line-height: 60px;
-  color: rgba(198, 201, 216, 0.75);
+  color: #fff;
+
   transition: all 0.3s ease-out;
 }
 .SocialMedia__Wrapper .SocialMedia__Button:hover .icon i {
-  color: #fff;
+  color: rgb(83, 232, 139);
+  color: -webkit-linear-gradient(
+    130deg,
+    rgba(83, 232, 139, 1) 0%,
+    rgba(21, 190, 119, 1) 100%
+  );
 }
 
 .SocialMedia__Wrapper .SocialMedia__Button span {

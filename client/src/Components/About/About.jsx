@@ -47,9 +47,9 @@ function About() {
                     <div className="About__skills__list">
                       <img
                         className="next-logo"
-                        src="nextjs-logo.png"
+                        src="nextjs.svg"
                         alt="nextjs logo"
-                      />{" "}
+                      />
                       <span> Next.js</span>
                     </div>
                     <div className="About__skills__list">
