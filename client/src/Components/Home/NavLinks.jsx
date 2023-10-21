@@ -25,7 +25,7 @@ function NavLinks() {
           to="Contact"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-70}
           duration={1000}
         >
           <li className="nav__items mx__15 pointer">Contact</li>
