@@ -13,15 +13,7 @@ li.nav__items {
 }
 
 li.nav__items:hover {
-  background: rgb(83, 232, 139);
-  background: -webkit-linear-gradient(
-    130deg,
-    rgba(83, 232, 139, 1) 0%,
-    rgba(21, 190, 119, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 500;
+  color: rgb(83, 232, 139);
   transition: 0.4s all ease;
 }
 
