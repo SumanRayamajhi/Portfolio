@@ -10,6 +10,8 @@ import { SiTailwindcss, SiExpress, SiMysql } from "react-icons/si";
 import { DiJavascript, DiPostgresql } from "react-icons/di";
 import { FiFigma } from "react-icons/fi";
 import "./About.css";
+import Profile from "../../assets/profile.png";
+import NextJs from "../../assets/nextjs.svg";
 
 function About() {
   return (
@@ -17,7 +19,7 @@ function About() {
       <div className="container">
         <div className="row">
           <div className="col__2">
-            <img src="/img/suman-3-1.png" alt="img" className="about__img" />
+            <img src={Profile} alt="img" className="about__img" />
           </div>
           <div className="col__2 about__2">
             <h1 className="about__heading">About Me</h1>
@@ -47,7 +49,7 @@ function About() {
                     <div className="About__skills__list">
                       <img
                         className="next-logo"
-                        src="nextjs.svg"
+                        src={NextJs}
                         alt="nextjs logo"
                       />
                       <span> Next.js</span>

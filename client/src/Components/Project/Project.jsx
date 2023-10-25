@@ -1,6 +1,13 @@
 import React from "react";
 import "./Project.css";
 import Card from "react-bootstrap/Card";
+import PunkBeer from "../../assets/punk-beer.jpg";
+import TicTacToe from "../../assets/tic-tac-toe-game.jpg";
+import ToDoList from "../../assets/to-do-list.jpg";
+import Calculator from "../../assets/calculator.jpg";
+import Giphy from "../../assets/giphy-app.jpg";
+import CandyCrush from "../../assets/candy-crush.jpg";
+import ConnectFour from "../../assets/connect-four.jpg";
 
 function Project() {
   return (
@@ -13,14 +20,13 @@ function Project() {
       </div>
       <div className="container">
         <div className="row">
-
           <div className="col__3">
             <div className="project__box pointer relative">
               <Card className="Project__Cards">
                 <Card.Img
                   variant="top"
                   className="Project__Image"
-                  src="./img/punk-beer.jpg"
+                  src={PunkBeer}
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
@@ -56,7 +62,7 @@ function Project() {
                 <Card.Img
                   className="Project__Image"
                   variant="top"
-                  src="/img/tic-tac-toe-game.jpg"
+                  src={TicTacToe}
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
@@ -91,7 +97,7 @@ function Project() {
                 <Card.Img
                   className="Project__Image"
                   variant="top"
-                  src="/img/to-do-list.jpg"
+                  src={ToDoList}
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
@@ -128,7 +134,7 @@ function Project() {
                 <Card.Img
                   className="Project__Image"
                   variant="top"
-                  src="/img/calculator.jpg"
+                  src={Calculator}
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
@@ -161,7 +167,7 @@ function Project() {
                 <Card.Img
                   className="Project__Image"
                   variant="top"
-                  src="/img/giphy-app.jpg"
+                  src={Giphy}
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
@@ -195,7 +201,7 @@ function Project() {
                 <Card.Img
                   className="Project__Image"
                   variant="top"
-                  src="/img/candy-crush.jpg"
+                  src={CandyCrush}
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">
@@ -228,7 +234,7 @@ function Project() {
                 <Card.Img
                   className="Project__Image"
                   variant="top"
-                  src="/img/connect-four.jpg"
+                  src={ConnectFour}
                 />
                 <Card.Body>
                   <Card.Title className="Portfolio__title">

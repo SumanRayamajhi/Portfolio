@@ -4,6 +4,7 @@ import { CgMenu } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 import NavLinks from "./NavLinks";
 import NavLinksMobile from "./NavLinksMobile";
+import HomeImage from "../../assets/home.jpg";
 
 function Home() {
   window.addEventListener("scroll", function () {
@@ -57,7 +58,7 @@ function Home() {
               </div>
             </div>
             <div className="col__2 ">
-              <img src="/img/home.jpg" alt="img" className="about__img" />
+              <img src={HomeImage} alt="img" className="about__img" />
             </div>
           </div>
         </div>
