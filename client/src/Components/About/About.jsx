@@ -93,7 +93,9 @@ function About() {
                 href="Suman-Rayamajhi-CV.pdf"
                 download={"Suman-Rayamajhi-CV.pdf"}
               >
-                <button className="about btn pointer">Download CV</button>
+                <button className="button about btn pointer">
+                  Download CV
+                </button>
               </a>
             </div>
           </div>

@@ -1,7 +1,6 @@
 .contact {
   background-color: #191919;
   margin-top: -1rem;
-  width: 100%;
 }
 
 .contact__box {
@@ -68,13 +67,13 @@ textarea#message {
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-button.btn.contact.pointer {
+/* button.btn.contact.pointer {
   margin: 20px 0px;
-}
+} */
 .error {
   color: red;
 }
-button.button {
+/* button.button {
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
@@ -92,12 +91,12 @@ button.button {
   height: 50px;
   width: 180px;
   margin: 28px 10px;
-}
+} */
 
-button.button.pointer:hover {
+/* button.button.pointer:hover {
   background: #fff !important;
   color: #000 !important;
-}
+} */
 .contactMe__email_icons {
   display: grid;
   grid-template-columns: 2fr 2fr;
